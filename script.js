@@ -13,18 +13,18 @@ function handleImageClick(event) {
 
 	const imgSrc = target.attr('src');
 	const sources = ['ytplaylist.PNG','hangman.png','fbmessages.PNG'];
-	const names = ['Youtube Messenger Playlist','Hangman Game','Facebook Messenger Reader'];
-	const descriptions = ['A Youtube playlist made from every message ever sent to my Facebook Messenger account.\nBased off tutorial from Julian Knodt.\nUses NodeJS.',
-							'A Harry Potter themed Hangman game. Final group project in AP Computer Science class.\nDefeat dark wizards by casting spells.\nUses Java.',
-							'A program to filter messages from the Facebook messenger archive by person and date, in chronological or reverse order.\nUses NodeJS.']
+	const names = ['Youtube Messenger Playlist','Hangman Game','Messenger Reader'];
+	const descriptions = ['This Youtube playlist is made from every message ever sent to my Facebook Messenger account. It is based off tutorial from Julian Knodt and uses NodeJS.',
+							'This is a Harry Potter themed Hangman game, my final group project in AP Computer Science. It implements a GUI and uses Java.',
+							'This is a program to filter messages from the Facebook messenger archive by person and date, in chronological or reverse chronological order. It uses NodeJS.']
 	const links = ["https://goo.gl/dr76Pg","https://github.com/alveerak/hangman","https://goo.gl/pxypWU"];
 
 	// TODO
 	if(target.hasClass('selected')) {
 		target.removeClass('selected');
 		images.removeClass('not-selected');
-		nameLabel.text("");
-		descLabel.text("");
+		nameLabel.hide();
+		descLabel.text("Click on a bubble to learn more!");
 		linkLabel.hide();
 		
 	} else {
@@ -39,6 +39,8 @@ function handleImageClick(event) {
 		nameLabel.text(names[index]);
 		descLabel.text(descriptions[index]);
 		linkLabel.attr('href',links[index]);
+		nameLabel.show();
+		descLabel.show();
 		linkLabel.show();
 	}
 	
@@ -47,8 +49,8 @@ function handleImageClick(event) {
 $('document').ready(function() {
 
 	attachEventHandlers();
-	$('.proj-name').text("");
-	$('.proj-desc').text("");
+	$('.proj-name').hide();
+	$('.proj-desc').text("Click on a bubble to learn more!");
 	$('.proj-more').hide();
 
 });

@@ -10,7 +10,6 @@ h1 {
 
 p {
 	font-family: "Raleway", sans-serif;
-	text-align: center;
 	text-shadow: 0px 0px 10px white;
 	padding-bottom: 25px;
 	margin: 0px;
@@ -18,33 +17,26 @@ p {
 
 .blurb {
 	font-size: 150%;
-	padding-top: 40px;
+	margin-top: 100px;
 }
 
 .proj-name {
 	font-size: 175%;
-	margin-left: 25px;
-	margin-right: 25px;
-	margin-top: 30px;
 }
 
 .proj-desc {
 	font-size: 150%;
-	margin-top: 30px;
-	margin-left: 25px;
-	margin-right: 25px;
 }
 
 .proj-more {
-	margin-top: 30px;
 	font-size: 150%;
-	text-align: center;
 }
 
 .heading {
 	padding-top:80px;
 	font-weight: bold;
 	font-size: 200%;
+	text-align: center;
 }
 
 .splash {
@@ -59,11 +51,15 @@ p {
 	padding-bottom: 50px;
 }
 
+.logoname {
+	height: 80vh;
+	width: 80vh;
+}
+
 .img-circle {
 	border-radius: 50%;
-	height: 35%;
-	width: 35%;
-	margin: 50px;
+	height: 50vh;
+	width: 50vh;
 }
 
 .content{
@@ -78,17 +74,17 @@ p {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-bottom: 50px;
+    padding-bottom: 160px;
+    padding-top: 100px;
 }
 
 .img-proj {
 	border-radius: 50%;
-	height: 25%;
-	width: 25%;
 	margin: 5px;
-	margin-top: 100px;
 	margin-right: 25px;
 	margin-left: 25px;
+	height: 50vh;
+	width: 50vh;
 }
 
 .img-proj:hover {
@@ -118,6 +114,4 @@ p {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin-top: 100px;
-	margin-bottom: 100px;
 }

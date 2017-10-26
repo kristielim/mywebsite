@@ -12,7 +12,7 @@ function handleImageClick(event) {
 	const linkLabel = $('.proj-more');
 
 	const imgSrc = target.attr('src');
-	const sources = ['ytplaylist.png','hangman.png','fbmessages.png'];
+	const sources = ['ytplaylist.PNG','hangman.png','fbmessages.PNG'];
 	const names = ['Youtube Messenger Playlist','Hangman Game','Facebook Messenger Reader'];
 	const descriptions = ['A Youtube playlist made from every message ever sent to my Facebook Messenger account.\nBased off tutorial from Julian Knodt.\nUses NodeJS.',
 							'A Harry Potter themed Hangman game. Final group project in AP Computer Science class.\nDefeat dark wizards by casting spells.\nUses Java.',

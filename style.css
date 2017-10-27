@@ -85,7 +85,7 @@ p {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-bottom: 160px;
+    padding-bottom: 200px;
     padding-top: 100px;
 }
 
@@ -126,5 +126,4 @@ p {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin-bottom: 100px;
 }

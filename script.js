@@ -3,6 +3,9 @@ var isMobile;
 function attachEventHandlers() {
 	// TODO
 	$('.img-proj').on('click', handleImageClick); // when a div with the class image is clicked, do the function handleImageClick
+	$('ul.navbar-nav.nav').on('click', function() {
+		$('#myNavbar').addClass('collapsing').removeClass('collapse in').attr('aria-expanded', false);
+	});
 }
 
 function handleImageClick(event) {
@@ -62,7 +65,7 @@ function handleImageClick(event) {
 
 		if(isMobile.matches) {
 			$('html, body').animate({
-        		scrollTop: parseInt($("#proj").offset().top)
+        		scrollTop: parseInt($("#project").offset().top)
    			}, 1000);
 		}
 	}

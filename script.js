@@ -32,12 +32,13 @@ function handleImageClick(event) {
 	const linkLabel = $('.proj-more');
 
 	const imgSrc = target.attr('src');
-	const sources = ['ytplaylist.PNG','hangman.png','fbmessages.PNG'];
-	const names = ['Youtube Playlist','Hangman Game','Messenger Reader'];
-	const descriptions = ['This Youtube playlist is made from every video ever sent to my Facebook Messenger account. It is based off tutorial from Julian Knodt and uses NodeJS.',
-							'This is a Harry Potter themed Hangman game, my final group project in AP Computer Science. It implements a GUI and uses Java.',
-							'This is a program to filter messages from the Facebook messenger archive by person and date, in chronological or reverse chronological order. It uses NodeJS.']
-	const links = ["https://goo.gl/dr76Pg","https://github.com/alveerak/hangman","https://goo.gl/pxypWU"];
+	const sources = ['ytplaylist.PNG','hangman.png','fbmessages.PNG','starsearch.PNG'];
+	const names = ['Youtube Playlist','Hangman Game','Messenger Reader','Star Search'];
+	const descriptions = ['This Youtube playlist is made from every video ever sent to my Facebook Messenger account. It is based off tutorial from Julian Knodt. (JavaScript)',
+							'This is a Harry Potter themed Hangman game, my final group project in AP Computer Science. (Java)',
+							'This is a program to filter messages from the Facebook messenger archive by person and date, in chronological or reverse chronological order. (JavaScript)',
+							'This is a game to guess a secret word. I also wrote a program to win the game more efficiently. (C++)']
+	const links = ["https://goo.gl/dr76Pg","https://github.com/alveerak/hangman","https://goo.gl/pxypWU", "https://goo.gl/5NEk2j"];
 
 	// TODO
 	if(target.hasClass('selected')) {

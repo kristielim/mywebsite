@@ -31,14 +31,47 @@ p {
 
 .proj-name {
 	font-size: 175%;
+	padding-bottom: 0px;
 }
 
 .proj-desc {
 	font-size: 150%;
+	padding-bottom: 0px;
 }
 
 .proj-more {
 	font-size: 150%;
+	margin: auto;
+	padding-bottom: 0px;
+}
+
+#overlay {
+	position: fixed;
+    z-index: 101;
+    height: 50vh;
+    width: 40vw;
+    left: 50%;
+    top: 50%;
+    margin-left: -20vw;
+    margin-top: -25vh;
+    background-color: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    box-shadow: 0px 0px 6px #333;
+    border-radius: 10%;
+}
+
+.overlay-btns {
+	display: flex;
+	flex-direction: column;
+}
+
+.overlay-text {
+	margin: 60px;
+}
+
+.closebtn {
+	margin: auto;
+	margin-top: 20px;
 }
 
 .heading {
@@ -49,7 +82,7 @@ p {
 }
 
 .splash {
- 	background-image: url("sky.jpg");
+ 	background-image: url("resources/sky.jpg");
  	width: 100%;
  	background-repeat: no-repeat;
  	background-size: cover;
@@ -80,7 +113,7 @@ p {
 	align-items: center;
 	padding-left:  100px;
 	padding-right: 100px;
-	background-image: url("sky.jpg");
+	background-image: url("resources/sky.jpg");
 	background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
